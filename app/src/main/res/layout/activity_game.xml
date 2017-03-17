@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image_main"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.DharnaGame">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+        <!-- Player One's Area -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <!-- Status Bar -->
+            <LinearLayout
+                android:id="@+id/statusBar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:gravity="start"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/labelKaptaan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:fontFamily="serif-monospace"
+                    android:text="Human"/>
+
+                <TextView
+                    android:id="@+id/scoreKaptaan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="1"/>
+
+            </LinearLayout>
+
+            <!-- Image -->
+            <ImageView
+                android:layout_below="@+id/statusBar1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/character_nawaz"/>
+
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+        <!-- Player Two's Area -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <!-- Status Bar -->
+            <LinearLayout
+                android:id="@+id/statusBar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:gravity="end"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/labelSharif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:fontFamily="serif-monospace"
+                    android:text="Machine"/>
+
+                <TextView
+                    android:id="@+id/scoreSharif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="1"/>
+
+            </LinearLayout>
+
+            <!-- Image -->
+            <ImageView
+                android:layout_below="@+id/statusBar2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/character_imran"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!-- Game board -->
+    <RelativeLayout
+        android:id="@+id/board"
+        android:layout_above="@+id/platform"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/board"
+            android:scaleType="fitCenter"/>
+
+        <ImageView
+            android:id="@+id/kaptaan"
+            android:layout_width="15dp"
+            android:layout_height="30dp"
+            android:src="@drawable/object_player"
+            android:tint="#0011ff"
+            android:tintMode="multiply" />
+
+        <ImageView
+            android:id="@+id/sharif"
+            android:layout_width="15dp"
+            android:layout_height="30dp"
+            android:src="@drawable/object_player"
+            android:tint="#ff0000"
+            android:tintMode="multiply" />
+
+    </RelativeLayout>
+
+    <!-- Platform -->
+    <RelativeLayout
+        android:id="@+id/platform"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/platform"
+        android:layout_alignParentBottom="true">
+
+        <ProgressBar style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginBottom="3dp"
+            android:max="100"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/darker_gray"
+            android:secondaryProgress="100" />
+
+        <TextView
+            android:id="@+id/game_status"
+            android:text="Player's turn. Swipe to roll dice."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/game_level"
+            android:text="Level 1 (0%)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+    <!-- Dice -->
+    <ImageView
+        android:id="@+id/dice"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/die_1"
+        android:scaleType="centerInside"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

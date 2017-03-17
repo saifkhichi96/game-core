@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "71642684953",
+    "firebase_url": "https://kaptaans-quest.firebaseio.com",
+    "project_id": "kaptaans-quest",
+    "storage_bucket": "kaptaans-quest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71642684953:android:9dc67ce67486ac79",
+        "android_client_info": {
+          "package_name": "pk.smartgames.kaptaansquest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "71642684953-0r6l9lsn0mc7udp6as9dg3kf56hj79ar.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBF2GGqYjii4-Ds6irfc1LFy4NDgLRlvdw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

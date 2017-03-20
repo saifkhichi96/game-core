@@ -1,4 +1,4 @@
-package sfllhkhan95.game.kaptaansquest.dharna;
+package sfllhkhan95.game.ludo;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("sfllhkhan95.game.kaptaansquest.dharna", appContext.getPackageName());
+        assertEquals("sfllhkhan95.game.kaptaansquest.sharamnaak", appContext.getPackageName());
     }
 }

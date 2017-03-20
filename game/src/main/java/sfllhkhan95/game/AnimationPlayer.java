@@ -13,7 +13,6 @@ public class AnimationPlayer {
         move.setDuration(duration);
         move.setAnimationListener(callback);
         move.setFillAfter(true);
-
         object.startAnimation(move);
     }
 

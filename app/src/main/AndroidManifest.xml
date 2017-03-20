@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="sfllhkhan95.game.kaptaansquest">
+    package="sfllhkhan95.game.ludo">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,16 +11,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".GameDrawer"
+            android:name="sfllhkhan95.game.ludo.GameDrawer"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name=".GameStory"
+            android:name="sfllhkhan95.game.ludo.GameStory"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name=".ChooseTeam"
+            android:name="sfllhkhan95.game.ludo.ChooseTeam"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name=".LaunchScreen"
+            android:name="sfllhkhan95.game.ludo.LaunchScreen"
             android:screenOrientation="sensorLandscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

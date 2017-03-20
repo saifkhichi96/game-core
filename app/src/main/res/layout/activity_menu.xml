@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/image_menu"
-    tools:context="sfllhkhan95.game.kaptaansquest.GameDrawer">
+    tools:context="sfllhkhan95.game.ludo.GameDrawer">
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"

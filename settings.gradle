@@ -1,1 +1,1 @@
-include ':app', ':game', ':dharna'
+include ':app', ':game', ':snakes', ':ludo'

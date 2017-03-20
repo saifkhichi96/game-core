@@ -10,8 +10,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/dharna" />
             <option value="$PROJECT_DIR$/game" />
+            <option value="$PROJECT_DIR$/ludo" />
+            <option value="$PROJECT_DIR$/snakes" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

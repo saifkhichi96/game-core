@@ -11,22 +11,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".view.GameDrawer"
+            android:name=".GameDrawer"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name=".view.DharnaResult"
+            android:name=".GameStory"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name=".view.GameStory"
+            android:name=".ChooseTeam"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name=".view.DharnaGame"
-            android:screenOrientation="sensorLandscape" />
-        <activity
-            android:name=".view.ChooseTeam"
-            android:screenOrientation="sensorLandscape" />
-        <activity
-            android:name=".view.LaunchScreen"
+            android:name=".LaunchScreen"
             android:screenOrientation="sensorLandscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

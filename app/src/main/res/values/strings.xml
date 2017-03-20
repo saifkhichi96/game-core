@@ -1,5 +1,4 @@
 <resources>
     <string name="app_name">Kaptaan\'s Quest</string>
     <string name="banner_ad_unit_id">ca-app-pub-6293532072634065/2290209634</string>
-    <string name="game_level">Level %1$d (%2$s)</string>
 </resources>

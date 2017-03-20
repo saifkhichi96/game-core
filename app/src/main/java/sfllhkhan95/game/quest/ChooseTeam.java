@@ -1,10 +1,12 @@
-package sfllhkhan95.game.ludo;
+package sfllhkhan95.game.quest;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+
+import sfllhkhan95.game.ludo.R;
 
 public class ChooseTeam extends Activity implements View.OnClickListener {
 

@@ -1,9 +1,11 @@
-package sfllhkhan95.game.ludo;
+package sfllhkhan95.game.quest;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
+
+import sfllhkhan95.game.ludo.R;
 
 public class LaunchScreen extends AppCompatActivity {
 

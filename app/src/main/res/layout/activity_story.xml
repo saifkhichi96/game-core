@@ -9,27 +9,27 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="sfllhkhan95.game.ludo.GameStory">
+    tools:context="sfllhkhan95.game.ludo.sfllhkhan95.game.quest.GameStory">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true">
+        android:orientation="horizontal">
 
 
         <Button
-            android:text="Skip"
+            android:id="@+id/skip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/skip" />
+            android:text="Skip" />
 
         <Button
-            android:text="Next"
+            android:id="@+id/next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/next" />
+            android:text="Next" />
 
     </LinearLayout>
 

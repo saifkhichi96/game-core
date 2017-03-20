@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/image_menu"
-    tools:context="sfllhkhan95.game.ludo.GameDrawer">
+    tools:context="sfllhkhan95.game.ludo.sfllhkhan95.game.quest.GameDrawer">
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
@@ -19,41 +19,41 @@
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@+id/adView"
         android:layout_margin="35dp"
         android:background="#A000"
-        android:layout_above="@+id/adView"
-        android:scrollbars="horizontal"
-        android:scrollbarAlwaysDrawHorizontalTrack="true">
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:scrollbars="horizontal">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
             <LinearLayout
                 android:id="@+id/dharna"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_margin="25dp"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
+                    android:background="@drawable/game_dharna"
                     android:scaleType="centerInside"
-                    android:src="@drawable/tile_background"
-                    android:background="@drawable/game_dharna" />
+                    android:src="@drawable/tile_background" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
                     android:text="Dharna"
                     android:textColor="#fff"
-                    android:layout_marginTop="10dp"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -62,24 +62,24 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_margin="25dp"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
+                    android:background="@drawable/game_sharamnaak"
                     android:scaleType="centerInside"
-                    android:src="@drawable/tile_background"
-                    android:background="@drawable/game_sharamnaak" />
+                    android:src="@drawable/tile_background" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
                     android:text="Sharamnaak"
                     android:textColor="#fff"
-                    android:layout_marginTop="10dp"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -88,24 +88,24 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_margin="25dp"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
+                    android:background="@drawable/game_lockdown"
                     android:scaleType="centerInside"
-                    android:src="@drawable/tile_background"
-                    android:background="@drawable/game_lockdown" />
+                    android:src="@drawable/tile_background" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
                     android:text="Lockdown"
                     android:textColor="#fff"
-                    android:layout_marginTop="10dp"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -114,24 +114,24 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_margin="25dp"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
+                    android:background="@drawable/game_panama"
                     android:scaleType="centerInside"
-                    android:src="@drawable/tile_background"
-                    android:background="@drawable/game_panama" />
+                    android:src="@drawable/tile_background" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
                     android:text="Panama"
                     android:textColor="#fff"
-                    android:layout_marginTop="10dp"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -140,25 +140,25 @@
     </HorizontalScrollView>
 
     <TextView
-        android:text="Team"
+        android:id="@+id/team"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:textSize="17sp"
-        android:textColor="#fff"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
         android:layout_margin="10dp"
-        android:id="@+id/team" />
+        android:text="Team"
+        android:textColor="#fff"
+        android:textSize="17sp" />
 
     <ImageView
-        android:layout_width="40dp"
-        android:src="@drawable/ic_settings"
         android:id="@+id/settings"
+        android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_margin="10dp"/>
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_settings" />
 
 </RelativeLayout>

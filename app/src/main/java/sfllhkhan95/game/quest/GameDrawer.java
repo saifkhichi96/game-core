@@ -1,4 +1,4 @@
-package sfllhkhan95.game.ludo;
+package sfllhkhan95.game.quest;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -10,6 +10,7 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 
+import sfllhkhan95.game.ludo.R;
 import sfllhkhan95.game.ludo.view.GameActivity;
 
 public class GameDrawer extends Activity implements View.OnClickListener {
